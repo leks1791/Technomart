@@ -30,6 +30,40 @@ img {
     height: auto;
 }
 
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
 .top-nav {
     background-color: var(--basic-extra-dark);
+    color: var(--basic-white);
+    height: 42px;
+}
+
+.logo {
+    background-color: var(--basic-akcent);
+    width: 220px;
+    height: 35px;
+    display: block;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    text-align: center;
+    padding-top: 12px;
+}
+
+.site-navigation {
+    margin: 0;
+    padding: 0;
+    background-color: var(--basic-dark);
+    list-style-type: none;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.site-navigation a {
+    color: var(--basic-white);
 }
