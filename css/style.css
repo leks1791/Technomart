@@ -7,7 +7,40 @@
     --basic-dark: #32425C;
     --basic-gold: #FFD180;
     --basic-white: #ffffff;
+    --bg-header: #F1F5F7;
 }
+
+/* Fonts */
+
+
+@font-face {
+    font-family: "Cuprum";
+    src: url("../fonts/cuprum.woff2") format("woff2"),
+        url("../fonts/cuprum.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cuprum";
+    src: url("../fonts/cuprumbold.woff2") format("woff2"),
+        url("../fonts/cuprumbold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cuprum";
+    src: url("../fonts/cuprumitalic.woff2") format("woff2"),
+        url("../fonts/cuprumitalic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+
 
 body {
     min-width: 940px;
@@ -35,10 +68,24 @@ img {
     margin: 0 auto;
 }
 
+.main-header {
+    background-color: var(--bg-header);
+}
+
 .top-nav {
     background-color: var(--basic-extra-dark);
     color: var(--basic-white);
     height: 42px;
+    font-size: 18px;
+
+}
+
+.top-nav-wrapper {
+    display: flex;
+}
+
+.top-nav a {
+    color: var(--basic-white);
 }
 
 .logo {
@@ -49,6 +96,31 @@ img {
     box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
     text-align: center;
     padding-top: 12px;
+}
+
+.header-slogan {
+    color: var(--basic-akcent);
+    font-family: Cuprum;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.header-phone {
+    color: var(--basic-akcent);
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.header-adress {
+    color: var(--basic-dark);
+    font-size: 14px;
+}
+
+.header-login a {
+    font-size: 21px;
+    color: var(--basic-black);
+    line-height: 21px;
 }
 
 .site-navigation {
