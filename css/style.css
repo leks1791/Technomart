@@ -7,6 +7,7 @@
     --basic-dark: #32425C;
     --basic-gold: #FFD180;
     --basic-white: #ffffff;
+    --basic-grey: #A9A9A9;
     --bg-header: #F1F5F7;
 }
 
@@ -40,6 +41,24 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/ptsans.woff2") format("woff2"),
+        url("../fonts/ptsans.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/ptsansbold.woff2") format("woff2"),
+        url("../fonts/ptsansbold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 
 body {
@@ -61,6 +80,17 @@ a {
 img {
     max-width: 100%;
     height: auto;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .container {
@@ -151,6 +181,8 @@ img {
 }
 
 .promo-title {
+    margin: 0;
+    padding: 0;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
@@ -166,9 +198,40 @@ img {
 }
 
 .main-title {
+    margin: 0;
+    padding: 0;
     font-weight: 400;
     font-size: 30px;
     line-height: 30px;
     color: var(--basic-dark);
     text-transform: uppercase;
+}
+
+.product-card {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.product-title {
+    font-size: 18px;
+}
+
+.services-text {
+    font-family: "PT Sans";
+}
+
+
+.services-item a {
+    font-size: 21px;
+    color: var(--basic-white);
+}
+
+.services-item-current a {
+    color: var(--basic-dark);
+}
+
+.about-text {
+    font-family: "PT Sans";
 }
