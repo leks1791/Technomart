@@ -59,9 +59,11 @@
     font-display: swap;
 }
 
+.page {
+    height: 100%;
+}
 
-
-body {
+.page-body {
     min-width: 940px;
     margin: 0;
     padding: 0;
@@ -71,6 +73,9 @@ body {
     font-weight: 400;
     color: var(--basic-black);
     background-color: var(--basic-white);
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    min-height: 100%;
 }
 
 a {
@@ -91,6 +96,14 @@ ul {
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+.btn {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: var(--basic-akcent);
+    line-height: 18px;
 }
 
 .container {
@@ -222,7 +235,6 @@ ul {
     font-family: "PT Sans";
 }
 
-
 .services-item a {
     font-size: 21px;
     color: var(--basic-white);
@@ -234,4 +246,26 @@ ul {
 
 .about-text {
     font-family: "PT Sans";
+}
+
+.about-item {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.page-footer {
+    color: var(--basic-white);
+}
+
+.top-footer {
+    background-color: var(--basic-dark);
+}
+
+.bottom-footer {
+    background-color: var(--basic-extra-dark);
+}
+
+.footer-menu-item a {
+    color: var(--basic-white);
+    font-size: 18px;
 }
