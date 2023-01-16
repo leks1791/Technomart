@@ -104,6 +104,8 @@ ul {
     color: var(--basic-white);
     background-color: var(--basic-akcent);
     line-height: 18px;
+    height: 38px;
+    display: inline-block;
 }
 
 .container {
@@ -199,6 +201,10 @@ ul {
     color: var(--basic-white);
 }
 
+.promo {
+    margin-bottom: 59px;
+}
+
 .promo-list {
     margin: 0;
     padding: 0;
@@ -248,33 +254,92 @@ ul {
     text-transform: uppercase;
 }
 
+.title-wrap {
+    display: flex;
+    height: 89px;
+}
+
+.featured-product {
+    margin-bottom: 59px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .product-card {
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 18px;
+    width: 220px;
+}
+
+.product-card:not(:nth-child(4n)) {
+    margin-right: 20px;
 }
 
 .product-title {
     font-size: 18px;
 }
 
+.manufacturer-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.manufacturer-item {
+    width: 220px;
+    height: 145px;
+}
+
+.manufacturer-item:not(:nth-child(4n)) {
+    margin-right: 20px;
+}
+
+.services {
+    padding: 64px 0 99px;
+    margin-bottom: 120px;
+    background-color: var(--bg-header);
+}
+
+.services-slogan {
+    font-family: "PT Sans";
+    margin-bottom: 70px;
+}
+
 .services-text {
     font-family: "PT Sans";
 }
 
-.services-item a {
-    font-size: 21px;
-    color: var(--basic-white);
+.index-column {
+    display: flex;
+    margin-bottom: 70px;
 }
 
-.services-item-current a {
+.services-list {
+    width: 30%;
+    margin-right: 80px;
+}
+
+.services-item {
+    font-size: 21px;
+    color: var(--basic-white);
+    background-color: var(--basic-extra-dark);
+}
+
+.services-item-current {
     color: var(--basic-dark);
+    background-color: var(--basic-white);
 }
 
 .about-text {
     font-family: "PT Sans";
 }
+
 
 .about-item {
     font-size: 18px;
@@ -289,8 +354,18 @@ ul {
     background-color: var(--basic-dark);
 }
 
+.top-footer-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
 .bottom-footer {
     background-color: var(--basic-extra-dark);
+}
+
+.bottom-footer-wrap {
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-menu-item a {
