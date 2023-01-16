@@ -59,6 +59,19 @@
     font-display: swap;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .page {
     height: 100%;
 }
@@ -371,4 +384,47 @@ ul {
 .footer-menu-item a {
     color: var(--basic-white);
     font-size: 18px;
+}
+
+/* Style for catalog.html */
+
+.header-catalog-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumbs-list {
+    order: -1;
+    display: flex;
+}
+
+.catalog-wrap {
+    display: flex;
+}
+
+.filter-catalog {
+    width: 220px;
+    margin-right: 20px;
+}
+
+.filter-title {
+    width: 220px;
+}
+
+.catalog-sort {
+    display: flex;
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog-item {
+    width: 220px;
+    height: 318px;
+}
+
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
 }
