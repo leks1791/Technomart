@@ -286,6 +286,8 @@ ul {
     grid-column: 1/3;
     grid-row: 2/-1;
     background-color: yellow;
+    background-image: url(/img/promo-perfor.jpg);
+    width: 620px;
 }
 
 .promo-title {
